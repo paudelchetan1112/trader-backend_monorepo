@@ -1,0 +1,74 @@
+# === Go Compiler & Binary Outputs ===
+# Compiled binaries (OS specific extensions)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries generated via 'go test -c'
+*.test
+
+# Output files from the Go test coverage tool
+*.out
+*.prof
+
+# Common custom build destination folders
+bin/
+dist/
+out/
+
+# === Go Dependency Management ===
+# Crash dumps
+crash.log
+
+# Only uncomment the line below if you are explicitly choosing to vendor 
+# your dependencies via 'go mod vendor'. Otherwise, keep it ignored.
+# vendor/
+
+# === VS Code & IDE Configs ===
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Other common IDEs (JetBrains/GoLand, Vim)
+.idea/
+*.iwb
+*.iml
+.classpath
+.project
+.settings/
+*.swp
+*~
+
+# === Operating System Noise ===
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]ownloads/
+
+# Linux files
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# === Environment Variables & Secrets ===
+# NEVER commit credentials, private keys, or API tokens
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
